@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Projeto GIT
+    </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        section{            
+            width: 370px;
+            height: 350px;
+            background-color: #17171b;
+            padding: 30px; 
+            position: relative;           
+       }
+        
+        body{          
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;             
+            background-color: #0d0b0e;
+            font-family: verdana;            
+        }
+
+        #email{
+            width: 200px;
+            height: 30px;
+        }
+
+        section p{      
+            position: absolute;      
+            color: #fcfcfc;
+            font-size: 0.9rem;
+            bottom: 150px;
+        }       
+        section input{     
+            position: absolute;
+            border-radius: 5px;
+            background-color: #17171b;
+            color: #fcfcfc;
+            width: 310px;
+            height: 45px;
+            display: block;
+            padding-left: 10px;
+            bottom: 105px;
+        }
+        section input:active{
+            border-style:hidden;
+        }
+        .image{
+            height: 160px;
+            text-align: center;            
+        }
+
+        section button{
+            position: absolute;
+            width: 310px;
+            height: 50px;
+            border-radius: 5px;
+            bottom: 30px;
+            border-color: transparent;
+            background-color: #28f5be;
+            color: #000;
+            /* margin-bottom: 10px; */
+        }
+
+        .image img{
+            height: 100px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        #aviso{
+            position: absolute;
+            color: #ff004b;
+            bottom: 85px;
+            font-size: 0.8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="image">
+            <img src="github.png" alt="">
+        </div>
+        <p>Usuário do Github</p>    
+        <input type="email" name="email_usuario" size="40" placeholder="Insira seu usuário..." id="search">    
+        <div id="aviso"></div>
+        <a href="/#" target="_self" id="botao"><button>ENTRAR</button></a>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
